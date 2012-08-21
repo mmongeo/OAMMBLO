@@ -4,11 +4,71 @@
     android:layout_height="match_parent" >
 
     <TextView
+        android:id="@+id/txtVwInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".AuthenticationActivity" />
+        android:text="Inicio de sesion de Twitter!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtVwExplicacionInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtVwInicio"
+        android:layout_marginTop="16dp"
+        android:text="Ingrese los datos de su cuenta de Twitter y luego presione el boton &quot;Ingresar&quot;."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/txtVwUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVwExplicacionInicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Usuario:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/eTxtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVwUsuario"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtVwContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTxtUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Contrasena:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/eTxtContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVwContrasena"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtVwUsuario"
+        android:layout_below="@+id/eTxtContrasena"
+        android:layout_marginTop="18dp"
+        android:text="Ingresar" />
 
 </RelativeLayout>

@@ -23,6 +23,10 @@
             android:name=".ui.AuthenticationActivity"
             android:label="@string/title_activity_authentication" >
         </activity>
+        <activity
+            android:name=".ui.TimelineActivity"
+            android:label="@string/title_activity_timeline" >
+        </activity>
     </application>
 
 </manifest>
